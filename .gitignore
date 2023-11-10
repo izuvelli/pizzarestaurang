@@ -473,7 +473,7 @@ appsettings-schema.*.json
 #/umbraco/Data/*.sqlite.db-wal
 
 # Log files
-/umbraco/Logs/
+#/Logs/
 
 # Media files
-/wwwroot/media/
+#/wwwroot/media/
