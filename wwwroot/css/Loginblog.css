@@ -1,0 +1,68 @@
+﻿
+/*etiketter*/
+.form-label {
+font-size: 15px;
+padding-top: 5px;
+}
+
+.header{
+    background-color: grey;
+}
+
+.logReg{
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.login {
+/*    background-color: red;
+*/    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.register {
+/*    background-color: blue;
+*/    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.status {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 -1px 0 black;
+
+}
+
+
+.nav-link nav-link--home nav-link--home__text logo-text {
+    padding-right: 200px;
+}
+
+.form-control{
+    border-radius: 15px;
+}
+
+/*.login-status {
+        background-color: red;
+}*/
+
+#loginP {
+     height: 0px;
+     outline: 1px solid black;
+     color: white;
+}
+
+h2{
+    margin-top: 50px;
+}
+
