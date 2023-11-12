@@ -5,8 +5,8 @@ font-size: 15px;
 padding-top: 5px;
 }
 
-.header{
-    background-color: grey;
+.header {
+    background-color: #e7afa3;
 }
 
 .logReg{
@@ -66,3 +66,10 @@ h2{
     margin-top: 50px;
 }
 
+#inloggad {
+    background-color: #e7afa3;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left:40%;
+}
