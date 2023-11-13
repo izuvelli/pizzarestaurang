@@ -12,3 +12,4 @@
 {
     <a class="nav-link @(item.IsAncestorOrSelf(Model) ? "nav-link--active" : null)" href="@item.Url()">@item.Name</a>
 }
+@await Html.PartialAsync("status")

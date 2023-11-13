@@ -6,16 +6,25 @@
     Layout = "master.cshtml";
 }
 @Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+<link rel="stylesheet" href="@Url.Content("~/css/Loginblog.css")" />
 
-<section class="section">
 
-    <div class="container">
-        @await Umbraco.RenderMacroAsync("latestBlogposts",
-            new
-            {
-                numberOfPosts = Model.HowManyPostsShouldBeShown,
-                startNodeId = Model.Id
-            })
-    </div>
+@if (!User.Identity.IsAuthenticated)
+{
+    <p id="inloggad">Du måste vara inloggad för att kunna se detta innehåll.</p>
+}
+else
+{
+    <section class="section">
 
-</section>
+        <div class="container">
+            @await Umbraco.RenderMacroAsync("latestBlogposts",
+        new
+        {
+        numberOfPosts = Model.HowManyPostsShouldBeShown,
+        startNodeId = Model.Id
+        })
+        </div>
+
+    </section>
+}
