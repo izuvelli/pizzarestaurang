@@ -1,0 +1,90 @@
+:root {
+    --font-family: 'Georgia', serif;
+    --font-size-base: 16px;
+    --hover-color: blue;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+p,
+.team-member p {
+    font-size: var(--font-size-base);
+    line-height: 1.5rem;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    margin: 1rem;
+}
+
+    .team-member img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .team-member h3 {
+        font-size: calc(var(--font-size-base) * 1.5);
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+/* About Us page styles */
+.section-header h1,
+.nav-bar--list a {
+    font-family: var(--font-family);
+}
+
+.nav-bar--list a {
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+    .nav-bar--list a:hover {
+        color: var(--hover-color);
+    }
+
+.umb-block-grid__layout-container {
+    grid-gap: 10px;
+}
+.team-member umb-block-grid__layout-item {
+    width: 200%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-member img.second-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.col-md-3 {
+    width: 20%;
+ 
+}
+.container{
+    width: 100%;
+}
+
+.col-md-9{
+    width:100%;
+}
+
+.div{
+ 
+}
+        
