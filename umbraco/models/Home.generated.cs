@@ -154,6 +154,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string HeroHeader => this.Value<string>(_publishedValueFallback, "heroHeader");
 
 		///<summary>
+		/// Mapski
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.2.0+173d8dc")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mapski")]
+		public virtual global::Bergmania.OpenStreetMap.Core.OpenStreetMapModel Mapski => this.Value<global::Bergmania.OpenStreetMap.Core.OpenStreetMapModel>(_publishedValueFallback, "mapski");
+
+		///<summary>
+		/// Reklam bild 1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.2.0+173d8dc")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("reklamBild1")]
+		public virtual object ReklamBild1 => this.Value(_publishedValueFallback, "reklamBild1");
+
+		///<summary>
 		/// Logo: Optional. If you add a logo it'll be used in the upper left corner instead of the site name. Make sure to use a transparent logo for best results
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.2.0+173d8dc")]
