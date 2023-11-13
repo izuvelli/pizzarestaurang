@@ -1,0 +1,21 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Login>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+<link rel="stylesheet" href="@Url.Content("~/css/Loginblog.css")" />
+
+<div class="logReg">
+	<div class="login">
+		@await Umbraco.RenderMacroAsync("Login")
+	</div>
+
+	<div class="register">
+		@await Umbraco.RenderMacroAsync("Register")
+	</div>
+</div>
+
+@* <div class="status">
+	@await Html.PartialAsync("loginstatus")
+</div> *@
