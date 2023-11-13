@@ -20,9 +20,6 @@
                 <h1>@Model.ProductName</h1>
                 <div class="product-price">@defaultCurrency @Model.Price.ToString("F")</div>
                 <div class="product-teaser">@Model.Description</div>
-                <div class="product-button">
-                    <button class="button button--border--solid">Buy</button>
-                </div>
                 <div class="product-advantages">
                     @Html.GetBlockListHtml(Model, "features")
                 </div>
