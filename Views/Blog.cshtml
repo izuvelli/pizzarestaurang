@@ -6,7 +6,15 @@
     Layout = "master.cshtml";
 }
 @Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+<link rel="stylesheet" href="@Url.Content("~/css/Loginblog.css")" />
 
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <p id="inloggad">Du måste vara inloggad för att kunna se detta innehåll.</p>
+}
+else
+{
 <section class="section">
 
     <div class="container">
@@ -19,3 +27,4 @@
     </div>
 
 </section>
+}
